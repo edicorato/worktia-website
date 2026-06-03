@@ -268,7 +268,7 @@ export const translations: Record<Locale, Translation> = {
         {
           question: "Che valore ha il PDF generato?",
           answer:
-            "Il PDF aiuta a documentare l’intervento in modo ordinato, con le informazioni raccolte durante il lavoro. Non viene presentato come firma certificata e non sostituisce consulenze legali o collaudi formali quando richiesti.",
+            "Il PDF aiuta a documentare l’intervento in modo ordinato, con le informazioni raccolte durante il lavoro. Non viene presentato come firma elettronica qualificata e non sostituisce consulenze legali, collaudi formali o requisiti normativi quando richiesti.",
         },
         {
           question: "Per quali aziende è pensata?",
@@ -287,9 +287,9 @@ export const translations: Record<Locale, Translation> = {
   },
   en: {
     seo: {
-      title: "Worktia — Your field work, organized.",
+      title: "Worktia — Field work, organized.",
       description:
-        "Worktia helps teams, maintenance companies and field technicians manage jobs, photos, checklists, signatures and PDFs in one workflow built for field work.",
+        "Worktia helps field teams, maintenance companies and technicians manage jobs, photos, checklists, signatures and PDFs in one workflow built for field work.",
     },
     mailtoSubject: "Worktia beta access request",
     brand: "Worktia",
@@ -309,9 +309,9 @@ export const translations: Record<Locale, Translation> = {
     },
     hero: {
       badge: "Private beta in preparation",
-      title: "Your field work, organized.",
+      title: "Field work, organized.",
       subtitle:
-        "Worktia helps teams, maintenance companies and field technicians turn jobs, photos, checklists and signatures into organized reports and professional PDFs.",
+        "Worktia helps field teams, maintenance companies and technicians turn jobs, photos, checklists and signatures into clear reports and professional PDFs.",
     },
     phone: {
       ariaLabel: "Worktia interface preview",
@@ -327,9 +327,9 @@ export const translations: Record<Locale, Translation> = {
     },
     problem: {
       kicker: "The problem",
-      title: "When the work is done, there is often still a lot to put back in order.",
+      title: "The job may be done, but the paperwork is often still a mess.",
       description:
-        "Photos in chats, scattered notes, verbal confirmations and end-of-day reports copied by hand waste time and make it harder to show what was done.",
+        "Photos in chats, scattered notes, verbal confirmations and end-of-day paperwork waste time and make it harder to prove what was actually done.",
       cards: [
         {
           title: "Chats full of messages",
@@ -351,10 +351,10 @@ export const translations: Record<Locale, Translation> = {
     },
     flow: {
       kicker: "How it works",
-      title: "A simple workflow designed to reach the report without chasing missing pieces.",
+      title: "A simple workflow from job to report.",
       description:
-        "A linear flow for people working in the field who do not want to waste time rebuilding the job afterwards.",
-      steps: ["Create the job", "Collect photos and checklists", "Record a signature or confirmation", "Generate the PDF", "Archive and prepare billing"],
+        "Built for field teams that need to document the job while the work is still fresh.",
+      steps: ["Create the job", "Collect photos and checklists", "Capture a signature or confirmation", "Generate the PDF", "Archive and prepare billing"],
     },
     features: {
       kicker: "Features",
@@ -423,10 +423,10 @@ export const translations: Record<Locale, Translation> = {
     },
     difference: {
       kicker: "The difference",
-      title: "Not a generic management tool. An operational workflow to document work better.",
+      title: "Not another generic management tool.\nA field workflow to document work better.",
       description:
         "Worktia is designed mobile-first to reduce manual steps and turn what happens in the field into organized, readable material ready for internal processes.",
-      points: ["Less scattered information", "Reports that are easier to rebuild", "Clearer documents for customers and archives"],
+      points: ["Less scattered information", "Reports that are easier to produce", "Clearer documents for customers and internal records"],
     },
     betaCta: {
       kicker: "Private beta",
@@ -455,7 +455,7 @@ export const translations: Record<Locale, Translation> = {
         {
           question: "What value does the generated PDF have?",
           answer:
-            "The PDF helps document the job in an organized way, using the information collected during the work. It is not presented as a certified signature and does not replace legal advice, formal inspections or regulatory requirements when required.",
+            "The PDF helps document the job in an organized way, using the information collected during the work. It is not presented as a qualified electronic signature and does not replace legal advice, formal acceptance procedures or regulatory requirements when required.",
         },
         {
           question: "What companies is it designed for?",
@@ -464,7 +464,7 @@ export const translations: Record<Locale, Translation> = {
       ],
     },
     footer: {
-      tagline: "Your field work, organized.",
+      tagline: "Field work, organized.",
       links: {
         privacy: "Privacy",
         terms: "Terms",
@@ -474,9 +474,9 @@ export const translations: Record<Locale, Translation> = {
   },
   es: {
     seo: {
-      title: "Worktia — Tu trabajo, en orden.",
+      title: "Worktia — Tu trabajo de campo, en orden.",
       description:
-        "Worktia ayuda a equipos, empresas de mantenimiento y técnicos de campo a gestionar trabajos, fotos, listas de control, firmas y PDF en un único flujo de trabajo.",
+        "Worktia ayuda a equipos de mantenimiento y técnicos de campo a gestionar intervenciones, fotos, checklists, firmas y PDF en un único flujo de trabajo.",
     },
     mailtoSubject: "Solicitud de acceso beta Worktia",
     brand: "Worktia",
@@ -496,9 +496,9 @@ export const translations: Record<Locale, Translation> = {
     },
     hero: {
       badge: "Beta privada en preparación",
-      title: "Tu trabajo, en orden.",
+      title: "Tu trabajo de campo, en orden.",
       subtitle:
-        "Worktia ayuda a equipos, empresas de mantenimiento y técnicos de campo a convertir trabajos, fotos, listas de control y firmas en informes ordenados y PDF profesionales.",
+        "Worktia ayuda a equipos de mantenimiento y técnicos de campo a convertir intervenciones, fotos, checklists y firmas en informes claros y PDF profesionales.",
     },
     phone: {
       ariaLabel: "Vista previa de la interfaz Worktia",
@@ -507,48 +507,48 @@ export const translations: Record<Locale, Translation> = {
       customer: "Cliente: Comunidad Rovere",
       report: "Informe",
       pdfReady: "PDF listo",
-      checklist: "Lista de control",
+      checklist: "Checklist",
       checklistItems: ["Fotos iniciales", "Controles completados", "Firma del cliente"],
       nextStep: "Siguiente paso",
       nextStepDescription: "Archivar y preparar el flujo para facturación.",
     },
     problem: {
       kicker: "El problema",
-      title: "Cuando el trabajo está hecho, a menudo todavía queda poner todo en orden.",
+      title: "La intervención puede estar terminada, pero la documentación suele quedar desordenada.",
       description:
-        "Fotos en chats, notas dispersas, confirmaciones verbales e informes copiados al final del día hacen perder tiempo y dificultan demostrar qué se hizo.",
+        "Fotos en chats, notas dispersas, confirmaciones verbales e informes preparados al final del día hacen perder tiempo y dificultan demostrar qué se hizo realmente.",
       cards: [
         {
           title: "Chats llenos de mensajes",
           description: "La información queda dentro de conversaciones difíciles de consultar.",
         },
         {
-          title: "Fotos dispersas entre chat y galería",
+          title: "Fotos dispersas entre chats y galería",
           description: "Las imágenes no siempre están conectadas con el trabajo correcto.",
         },
         {
-          title: "Informes manuales que copiar",
+          title: "Informes manuales que rehacer",
           description: "Al final del día hay que reconstruir todo desde notas y memoria.",
         },
         {
-          title: "Clientes y confirmaciones que perseguir",
+          title: "Clientes y confirmaciones pendientes",
           description: "Faltan pasos claros para entrega, firma y archivo.",
         },
       ],
     },
     flow: {
       kicker: "Cómo funciona",
-      title: "Un flujo sencillo, pensado para llegar al informe sin perseguir piezas sueltas.",
+      title: "Un flujo sencillo: de la intervención al informe.",
       description:
         "Un flujo lineal para quien trabaja en campo y no quiere perder tiempo reconstruyendo la intervención después.",
-      steps: ["Crear trabajo", "Recoger fotos y listas de control", "Registrar firma o confirmación", "Generar PDF", "Archivar y preparar facturación"],
+      steps: ["Crear la intervención", "Recoger fotos y checklists", "Registrar firma o confirmación", "Generar PDF", "Archivar y preparar facturación"],
     },
     features: {
       kicker: "Funciones",
       title: "Las herramientas esenciales para documentar mejor cada intervención.",
       cards: [
         {
-          title: "Trabajos y clientes",
+          title: "Intervenciones y clientes",
           description: "Mantén conectados cliente, intervención, estado, dirección y actividades.",
         },
         {
@@ -556,7 +556,7 @@ export const translations: Record<Locale, Translation> = {
           description: "Recoge imágenes directamente en el contexto del trabajo.",
         },
         {
-          title: "Listas de control operativas",
+          title: "Checklists operativas",
           description: "Sigue actividades y controles sin hojas dispersas.",
         },
         {
@@ -595,11 +595,11 @@ export const translations: Record<Locale, Translation> = {
           description: "Salidas técnicas, controles, reparaciones y confirmaciones recogidas en un único flujo.",
         },
         {
-          title: "Facility y limpieza",
-          description: "Listas de control, tareas recurrentes y pruebas fotográficas para equipos operativos.",
+          title: "Servicios generales y limpieza",
+          description: "Checklists, tareas recurrentes y pruebas fotográficas para equipos operativos.",
         },
         {
-          title: "Construcción ligera",
+          title: "Obras menores y reformas",
           description: "Pequeñas obras, avances, visitas y entregas documentadas.",
         },
         {
@@ -610,7 +610,7 @@ export const translations: Record<Locale, Translation> = {
     },
     difference: {
       kicker: "La diferencia",
-      title: "No es un gestor genérico. Es un flujo operativo para documentar mejor el trabajo.",
+      title: "No es otro gestor genérico.\nEs un flujo operativo para documentar mejor el trabajo de campo.",
       description:
         "Worktia nace mobile-first para reducir pasos manuales y transformar lo que ocurre en campo en material ordenado, legible y listo para procesos internos.",
       points: ["Menos información dispersa", "Informes más fáciles de reconstruir", "Documentos más claros para cliente y archivo"],
@@ -619,7 +619,7 @@ export const translations: Record<Locale, Translation> = {
       kicker: "Beta privada",
       title: "¿Quieres probar Worktia cuando la beta esté lista?",
       description:
-        "Estamos reuniendo empresas y técnicos interesados en validar el flujo real: trabajos, fotos, listas de control, firma, PDF y archivo.",
+        "Estamos reuniendo empresas y técnicos interesados en validar el flujo real: intervenciones, fotos, checklists, firma, PDF y archivo.",
     },
     faq: {
       kicker: "FAQ",
@@ -642,11 +642,11 @@ export const translations: Record<Locale, Translation> = {
         {
           question: "¿Qué valor tiene el PDF generado?",
           answer:
-            "El PDF ayuda a documentar la intervención de forma ordenada, con la información recogida durante el trabajo. No se presenta como firma certificada y no sustituye asesoramiento legal, inspecciones formales o requisitos normativos cuando sean necesarios.",
+            "El PDF ayuda a documentar la intervención de forma ordenada, con la información recogida durante el trabajo. No se presenta como firma electrónica cualificada y no sustituye asesoramiento legal, recepciones formales ni requisitos normativos cuando sean necesarios.",
         },
         {
           question: "¿Para qué empresas está pensada?",
-          answer: "Para empresas y equipos operativos que gestionan trabajos, mantenimientos, inspecciones, listas de control, fotos e informes para entregar o archivar.",
+          answer: "Para empresas y equipos operativos que gestionan intervenciones, mantenimientos, inspecciones, checklists, fotos e informes para entregar o archivar.",
         },
       ],
     },
@@ -661,9 +661,9 @@ export const translations: Record<Locale, Translation> = {
   },
   fr: {
     seo: {
-      title: "Worktia — Votre travail, en ordre.",
+      title: "Worktia — Vos interventions, enfin organisées.",
       description:
-        "Worktia aide les équipes, les entreprises de maintenance et les techniciens terrain à gérer interventions, photos, checklists, signatures et PDF dans un seul flux.",
+        "Worktia aide les équipes terrain, les entreprises de maintenance et les techniciens à gérer interventions, photos, listes de contrôle, signatures et PDF dans un seul flux.",
     },
     mailtoSubject: "Demande d’accès bêta Worktia",
     brand: "Worktia",
@@ -683,9 +683,9 @@ export const translations: Record<Locale, Translation> = {
     },
     hero: {
       badge: "Bêta privée en préparation",
-      title: "Votre travail, en ordre.",
+      title: "Vos interventions, enfin organisées.",
       subtitle:
-        "Worktia aide les équipes, les entreprises de maintenance et les techniciens terrain à transformer interventions, photos, checklists et signatures en rapports ordonnés et PDF professionnels.",
+        "Worktia aide les équipes terrain, les entreprises de maintenance et les techniciens à transformer interventions, photos, listes de contrôle et signatures en rapports clairs et PDF professionnels.",
     },
     phone: {
       ariaLabel: "Aperçu de l’interface Worktia",
@@ -694,16 +694,16 @@ export const translations: Record<Locale, Translation> = {
       customer: "Client : Immeuble Rovere",
       report: "Rapport",
       pdfReady: "PDF prêt",
-      checklist: "Checklist",
+      checklist: "Liste de contrôle",
       checklistItems: ["Photos initiales", "Contrôles terminés", "Signature client"],
       nextStep: "Étape suivante",
       nextStepDescription: "Archiver et préparer le flux pour la facturation.",
     },
     problem: {
       kicker: "Le problème",
-      title: "Quand le travail est terminé, il reste souvent à tout remettre en ordre.",
+      title: "L’intervention est terminée, mais le dossier reste souvent à remettre en ordre.",
       description:
-        "Photos dans les chats, notes dispersées, confirmations verbales et petits rapports recopiés en fin de journée font perdre du temps et rendent plus difficile la preuve de ce qui a été fait.",
+        "Photos dans les conversations, notes dispersées, confirmations verbales et rapports rédigés en fin de journée font perdre du temps et compliquent la preuve du travail réalisé.",
       cards: [
         {
           title: "Chats pleins de messages",
@@ -714,7 +714,7 @@ export const translations: Record<Locale, Translation> = {
           description: "Les images ne sont pas toujours reliées à la bonne intervention.",
         },
         {
-          title: "Rapports manuels à recopier",
+          title: "Rapports manuels à rédiger",
           description: "En fin de journée, il faut tout reconstruire à partir de notes et de mémoire.",
         },
         {
@@ -725,10 +725,10 @@ export const translations: Record<Locale, Translation> = {
     },
     flow: {
       kicker: "Fonctionnement",
-      title: "Un flux simple, pensé pour arriver au rapport sans courir après les éléments.",
+      title: "Un flux simple, de l’intervention au rapport.",
       description:
-        "Un flux linéaire, pensé pour celles et ceux qui travaillent sur le terrain et ne veulent pas perdre de temps à reconstruire l’intervention ensuite.",
-      steps: ["Créer l’intervention", "Collecter photos et checklists", "Enregistrer une signature ou confirmation", "Générer le PDF", "Archiver et préparer la facturation"],
+        "Pensé pour les équipes terrain qui veulent documenter le travail au bon moment, sans devoir tout reconstruire ensuite.",
+      steps: ["Créer l’intervention", "Collecter photos et listes de contrôle", "Enregistrer une signature ou confirmation", "Générer le PDF", "Archiver et préparer la facturation"],
     },
     features: {
       kicker: "Fonctions",
@@ -743,7 +743,7 @@ export const translations: Record<Locale, Translation> = {
           description: "Collectez les images directement dans le contexte du travail.",
         },
         {
-          title: "Checklists opérationnelles",
+          title: "Listes de contrôle opérationnelles",
           description: "Suivez activités et contrôles sans feuilles dispersées.",
         },
         {
@@ -752,7 +752,7 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "PDF professionnels",
-          description: "Générez des documents plus ordonnés à partager et archiver.",
+          description: "Générez des documents plus clairs à partager et archiver.",
         },
         {
           title: "Offline-first",
@@ -783,7 +783,7 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Facility et nettoyage",
-          description: "Checklists, tâches récurrentes et preuves photo pour équipes opérationnelles.",
+          description: "Listes de contrôle, tâches récurrentes et preuves photo pour équipes opérationnelles.",
         },
         {
           title: "Petits chantiers",
@@ -797,16 +797,16 @@ export const translations: Record<Locale, Translation> = {
     },
     difference: {
       kicker: "La différence",
-      title: "Pas un logiciel de gestion générique. Un flux opérationnel pour mieux documenter le travail.",
+      title: "Pas un logiciel de gestion générique.\nUn flux terrain pour mieux documenter le travail.",
       description:
-        "Worktia est conçu mobile-first pour réduire les étapes manuelles et transformer ce qui se passe sur le terrain en matériel ordonné, lisible et prêt pour les processus internes.",
+        "Worktia est conçu mobile-first pour réduire les étapes manuelles et transformer ce qui se passe sur le terrain en documents clairs, lisibles et prêts pour vos processus internes.",
       points: ["Moins d’informations dispersées", "Rapports plus faciles à reconstruire", "Documents plus clairs pour le client et l’archive"],
     },
     betaCta: {
       kicker: "Bêta privée",
       title: "Voulez-vous essayer Worktia quand la bêta sera prête ?",
       description:
-        "Nous recueillons des entreprises et techniciens intéressés par la validation du flux réel : interventions, photos, checklists, signature, PDF et archivage.",
+        "Nous recueillons des entreprises et techniciens intéressés par la validation du flux réel : interventions, photos, listes de contrôle, signature, PDF et archivage.",
     },
     faq: {
       kicker: "FAQ",
@@ -829,16 +829,16 @@ export const translations: Record<Locale, Translation> = {
         {
           question: "Quelle est la valeur du PDF généré ?",
           answer:
-            "Le PDF aide à documenter l’intervention de manière ordonnée, avec les informations collectées pendant le travail. Il n’est pas présenté comme une signature certifiée et ne remplace pas les conseils juridiques, les contrôles formels ou les exigences réglementaires lorsque ceux-ci sont requis.",
+            "Le PDF aide à documenter l’intervention de manière structurée, avec les informations collectées pendant le travail. Il n’est pas présenté comme une signature électronique qualifiée et ne remplace pas un conseil juridique, une réception formelle ou des exigences réglementaires lorsque celles-ci sont requises.",
         },
         {
           question: "Pour quelles entreprises est-ce pensé ?",
-          answer: "Pour les entreprises et équipes opérationnelles qui gèrent interventions, maintenance, inspections, checklists, photos et rapports à remettre ou archiver.",
+          answer: "Pour les entreprises et équipes opérationnelles qui gèrent interventions, maintenance, inspections, listes de contrôle, photos et rapports à remettre ou archiver.",
         },
       ],
     },
     footer: {
-      tagline: "Votre travail, en ordre.",
+      tagline: "Vos interventions, enfin organisées.",
       links: {
         privacy: "Confidentialité",
         terms: "Conditions",
@@ -848,9 +848,9 @@ export const translations: Record<Locale, Translation> = {
   },
   de: {
     seo: {
-      title: "Worktia — Deine Arbeit, geordnet.",
+      title: "Worktia — Ihre Außendienstarbeit, organisiert.",
       description:
-        "Worktia hilft Teams, Wartungsbetrieben und Außendiensttechnikern, Aufträge, Fotos, Checklisten, Unterschriften und PDFs in einem einzigen Ablauf zu verwalten.",
+        "Worktia hilft Außendienstteams, Wartungsbetrieben und Technikern, Aufträge, Fotos, Checklisten, Unterschriften und PDFs in einem einzigen Ablauf zu verwalten.",
     },
     mailtoSubject: "Anfrage für Worktia Beta-Zugang",
     brand: "Worktia",
@@ -870,14 +870,14 @@ export const translations: Record<Locale, Translation> = {
     },
     hero: {
       badge: "Private Beta in Vorbereitung",
-      title: "Deine Arbeit, geordnet.",
+      title: "Ihre Außendienstarbeit, organisiert.",
       subtitle:
-        "Worktia hilft Teams, Wartungsbetrieben und Außendiensttechnikern, Aufträge, Fotos, Checklisten und Unterschriften in geordnete Berichte und professionelle PDFs zu verwandeln.",
+        "Worktia hilft Außendienstteams, Wartungsbetrieben und Technikern, Aufträge, Fotos, Checklisten und Unterschriften in klare Berichte und professionelle PDFs zu verwandeln.",
     },
     phone: {
       ariaLabel: "Vorschau der Worktia-Oberfläche",
       status: "In Arbeit",
-      jobTitle: "Heizkessel-Wartung",
+      jobTitle: "Heizungswartung",
       customer: "Kunde: Gebäude Rovere",
       report: "Bericht",
       pdfReady: "PDF bereit",
@@ -888,9 +888,9 @@ export const translations: Record<Locale, Translation> = {
     },
     problem: {
       kicker: "Das Problem",
-      title: "Wenn die Arbeit erledigt ist, bleibt oft noch alles zu ordnen.",
+      title: "Der Einsatz ist erledigt, aber die Dokumentation bleibt oft ungeordnet.",
       description:
-        "Fotos in Chats, verstreute Notizen, mündliche Bestätigungen und am Tagesende neu geschriebene Berichte kosten Zeit und erschweren den Nachweis der erledigten Arbeit.",
+        "Fotos in Chats, verstreute Notizen, mündliche Bestätigungen und Berichte am Tagesende kosten Zeit und erschweren den Nachweis der geleisteten Arbeit.",
       cards: [
         {
           title: "Chats voller Nachrichten",
@@ -912,9 +912,9 @@ export const translations: Record<Locale, Translation> = {
     },
     flow: {
       kicker: "So funktioniert es",
-      title: "Ein einfacher Ablauf, der zum Bericht führt, ohne fehlenden Teilen hinterherzulaufen.",
+      title: "Ein einfacher Ablauf: vom Auftrag zum Bericht.",
       description:
-        "Ein linearer Ablauf für Menschen im Außendienst, die nach dem Einsatz keine Zeit mit Rekonstruktion verlieren wollen.",
+        "Für Außendienstteams, die den Einsatz direkt dokumentieren möchten, statt ihn später mühsam zu rekonstruieren.",
       steps: ["Auftrag erstellen", "Fotos und Checklisten sammeln", "Unterschrift oder Bestätigung erfassen", "PDF erzeugen", "Archivieren und Abrechnung vorbereiten"],
     },
     features: {
@@ -926,24 +926,24 @@ export const translations: Record<Locale, Translation> = {
           description: "Kunde, Auftrag, Status, Adresse und Aktivitäten bleiben verbunden.",
         },
         {
-          title: "Fotos nach Auftrag geordnet",
-          description: "Sammle Bilder direkt im Kontext der Arbeit.",
+          title: "Fotos pro Auftrag",
+          description: "Fotos werden direkt im Kontext des Auftrags gesammelt.",
         },
         {
-          title: "Operative Checklisten",
-          description: "Folge Aufgaben und Prüfungen ohne verstreute Zettel.",
+          title: "Checklisten für den Einsatz",
+          description: "Aufgaben und Prüfungen bleiben nachvollziehbar, ohne verstreute Zettel.",
         },
         {
-          title: "Unterschrift auf dem Bericht",
-          description: "Erfasse bei Bedarf eine visuelle Bestätigung.",
+          title: "Unterschrift im Bericht",
+          description: "Bei Bedarf wird eine visuelle Bestätigung erfasst.",
         },
         {
           title: "Professionelle PDFs",
-          description: "Erzeuge klarere Dokumente zum Teilen und Archivieren.",
+          description: "Klarere Dokumente für Weitergabe und Archivierung.",
         },
         {
           title: "Offline-first",
-          description: "Arbeite auch dann, wenn die Verbindung nicht stabil ist.",
+          description: "Für Einsätze, bei denen die Verbindung nicht immer stabil ist.",
         },
         {
           title: "Techniker-/Kundenportal",
@@ -961,39 +961,39 @@ export const translations: Record<Locale, Translation> = {
       title: "Für Teams und Techniker, die eine klare Spur erledigter Arbeit brauchen.",
       cards: [
         {
-          title: "Immobilienwartung",
+          title: "Immobilienservice",
           description: "Einsätze in Wohnungen, Gebäuden und Immobilien mit geordneten Fotos, Notizen und Berichten.",
         },
         {
-          title: "Installationsbetriebe",
-          description: "Technische Besuche, Prüfungen, Reparaturen und Bestätigungen in einem Ablauf.",
+          title: "Handwerks- und Installationsbetriebe",
+          description: "Technische Einsätze, Prüfungen, Reparaturen und Bestätigungen in einem Ablauf.",
         },
         {
-          title: "Facility und Reinigung",
+          title: "Facility Management und Reinigung",
           description: "Checklisten, wiederkehrende Aufgaben und Fotobelege für operative Teams.",
         },
         {
-          title: "Leichter Bau",
+          title: "Kleine Baustellen und Renovierungen",
           description: "Kleine Baustellen, Fortschritte, Begehungen und dokumentierte Übergaben.",
         },
         {
-          title: "Inspektionen",
+          title: "Inspektionen und Kontrollen",
           description: "Kontrollen, Prüfungen und Berichte mit vor Ort gesammelten Nachweisen.",
         },
       ],
     },
     difference: {
       kicker: "Der Unterschied",
-      title: "Kein generisches Verwaltungstool. Ein operativer Ablauf, um Arbeit besser zu dokumentieren.",
+      title: "Kein generisches Verwaltungstool.\nEin Außendienst-Workflow für bessere Dokumentation.",
       description:
-        "Worktia ist mobile-first gedacht, um manuelle Schritte zu reduzieren und Außendienstereignisse in geordnetes, lesbares Material für interne Prozesse zu verwandeln.",
+        "Worktia ist mobile-first konzipiert, um manuelle Schritte zu reduzieren und Außendiensteinsätze in klare, lesbare Unterlagen für Kunden und interne Prozesse zu verwandeln.",
       points: ["Weniger verstreute Informationen", "Berichte leichter rekonstruieren", "Klarere Dokumente für Kunden und Archiv"],
     },
     betaCta: {
       kicker: "Private Beta",
-      title: "Möchtest du Worktia ausprobieren, wenn die Beta bereit ist?",
+      title: "Möchten Sie Worktia testen, sobald die Beta bereit ist?",
       description:
-        "Wir sammeln Unternehmen und Techniker, die den realen Ablauf validieren möchten: Aufträge, Fotos, Checklisten, Unterschrift, PDF und Archivierung.",
+        "Wir sammeln Unternehmen und Techniker, die den realen Ablauf in der Praxis testen möchten: Aufträge, Fotos, Checklisten, Unterschrift, PDF und Archivierung.",
     },
     faq: {
       kicker: "FAQ",
@@ -1016,7 +1016,7 @@ export const translations: Record<Locale, Translation> = {
         {
           question: "Welchen Wert hat das erzeugte PDF?",
           answer:
-            "Das PDF hilft, den Einsatz geordnet zu dokumentieren, mit den während der Arbeit gesammelten Informationen. Es wird nicht als zertifizierte Signatur dargestellt und ersetzt keine Rechtsberatung, formalen Abnahmen oder regulatorischen Anforderungen, wenn diese erforderlich sind.",
+            "Das PDF hilft, den Einsatz strukturiert zu dokumentieren – mit den Informationen, die während der Arbeit erfasst wurden. Es wird nicht als qualifizierte elektronische Signatur dargestellt und ersetzt keine Rechtsberatung, formale Abnahmen oder regulatorische Anforderungen, wenn diese erforderlich sind.",
         },
         {
           question: "Für welche Unternehmen ist es gedacht?",
@@ -1025,7 +1025,7 @@ export const translations: Record<Locale, Translation> = {
       ],
     },
     footer: {
-      tagline: "Deine Arbeit, geordnet.",
+      tagline: "Ihre Außendienstarbeit, organisiert.",
       links: {
         privacy: "Datenschutz",
         terms: "Bedingungen",
