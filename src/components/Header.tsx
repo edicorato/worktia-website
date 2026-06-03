@@ -3,11 +3,12 @@ import { useLocale } from "../i18n/useLocale";
 
 export function Header() {
   const { locale, t, changeLocale, mailtoHref } = useLocale();
+  const homeHref = `/${locale}`;
   const navItems = [
-    { label: t.nav.flow, href: "#come-funziona" },
-    { label: t.nav.features, href: "#funzioni" },
-    { label: t.nav.useCases, href: "#per-chi" },
-    { label: t.nav.beta, href: "#beta" },
+    { label: t.nav.flow, href: `${homeHref}#come-funziona` },
+    { label: t.nav.features, href: `${homeHref}#funzioni` },
+    { label: t.nav.useCases, href: `${homeHref}#per-chi` },
+    { label: t.nav.beta, href: `${homeHref}#beta` },
   ];
 
   return (
@@ -17,7 +18,7 @@ export function Header() {
         aria-label={t.nav.ariaLabel}
       >
         <a
-          href="#top"
+          href={`${homeHref}#top`}
           className="text-xl font-bold tracking-normal text-anthracite outline-none transition focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-paper"
         >
           {t.brand}

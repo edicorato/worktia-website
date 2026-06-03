@@ -1,11 +1,11 @@
 import { useLocale } from "../i18n/useLocale";
 
 export function Footer() {
-  const { t } = useLocale();
+  const { locale, t, mailtoHref } = useLocale();
   const links = [
-    { label: t.footer.links.privacy, href: "#" },
-    { label: t.footer.links.terms, href: "#" },
-    { label: t.footer.links.contacts, href: "mailto:beta@worktia.com" },
+    { label: t.footer.links.privacy, href: `/${locale}/privacy` },
+    { label: t.footer.links.terms, href: `/${locale}/terms` },
+    { label: t.footer.links.contacts, href: mailtoHref },
   ];
 
   return (

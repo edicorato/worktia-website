@@ -11,6 +11,23 @@ type FAQ = {
   answer: string;
 };
 
+type LegalSection = {
+  title: string;
+  body?: string;
+  items?: string[];
+};
+
+type LegalPage = {
+  seo: {
+    title: string;
+    description: string;
+  };
+  title: string;
+  updated: string;
+  intro: string;
+  sections: LegalSection[];
+};
+
 export type Translation = {
   seo: {
     title: string;
@@ -86,6 +103,13 @@ export type Translation = {
     kicker: string;
     title: string;
     items: FAQ[];
+  };
+  legal: {
+    common: {
+      backHome: string;
+    };
+    privacy: LegalPage;
+    terms: LegalPage;
   };
   footer: {
     tagline: string;
@@ -276,6 +300,144 @@ export const translations: Record<Locale, Translation> = {
         },
       ],
     },
+    legal: {
+      common: {
+        backHome: "Torna alla home",
+      },
+      privacy: {
+        seo: {
+          title: "Privacy | Worktia",
+          description: "Informativa privacy della landing beta/pre-lancio di Worktia.",
+        },
+        title: "Informativa privacy",
+        updated: "Ultimo aggiornamento: 2026-06-03",
+        intro:
+          "Questa informativa descrive in modo sintetico come possono essere trattati i dati personali nella landing beta/pre-lancio di Worktia. Non costituisce consulenza legale.",
+        sections: [
+          {
+            title: "Chi siamo",
+            body: "Worktia è un progetto in fase beta/pre-lancio dedicato alla gestione dei lavori sul campo.",
+          },
+          {
+            title: "Ambito",
+            body: "Questa informativa riguarda la landing pubblica di Worktia e le richieste beta o pre-lancio inviate via email.",
+          },
+          {
+            title: "Cosa non copre ancora",
+            body: "Questa informativa non riguarda ancora un'app completa, account pubblici, pagamenti, sincronizzazione cloud o portali cliente/tecnico, perché non sono attivi su questa landing.",
+          },
+          {
+            title: "Quali dati possiamo trattare",
+            items: [
+              "dati tecnici di navigazione necessari al funzionamento del sito e dell'hosting;",
+              "dati inviati volontariamente via email, per esempio nome, email, azienda, settore e messaggio;",
+              "nessun pagamento, account utente o form backend attivo su questa landing.",
+            ],
+          },
+          {
+            title: "Finalità",
+            items: [
+              "rispondere a richieste di informazioni o accesso beta;",
+              "gestire comunicazioni pre-commerciali;",
+              "migliorare la comprensione dell'interesse verso Worktia;",
+              "garantire sicurezza e funzionamento tecnico del sito.",
+            ],
+          },
+          {
+            title: "Cookie e tracking",
+            body: "Questa landing non usa strumenti di tracking, analytics o cookie di profilazione. Se in futuro verranno introdotti strumenti di analisi o marketing, questa informativa sarà aggiornata e, dove richiesto, sarà richiesto il consenso.",
+          },
+          {
+            title: "Base giuridica",
+            items: [
+              "richiesta dell'utente o misure precontrattuali per rispondere alla richiesta beta;",
+              "legittimo interesse per sicurezza e funzionamento tecnico del sito;",
+              "obblighi legali, dove applicabili.",
+            ],
+          },
+          {
+            title: "Conservazione",
+            body: "I dati inviati via email saranno conservati per il tempo necessario a gestire la richiesta beta e le comunicazioni collegate, salvo obblighi o necessità ulteriori.",
+          },
+          {
+            title: "Condivisione",
+            body: "I dati possono essere trattati da fornitori tecnici necessari al funzionamento del sito, del deploy/repository e della posta elettronica. Non vendiamo dati personali.",
+          },
+          {
+            title: "Trasferimenti extra SEE",
+            body: "Alcuni fornitori tecnici potrebbero trattare dati fuori dallo Spazio Economico Europeo, se applicabile. In questi casi il trattamento dipende dalle garanzie e dalle condizioni previste dai rispettivi fornitori.",
+          },
+          {
+            title: "Diritti",
+            body: "L'utente può chiedere accesso, rettifica, cancellazione, limitazione, opposizione e, dove applicabile, portabilità.",
+          },
+          {
+            title: "Aggiornamenti",
+            body: "Questa informativa sarà aggiornata prima di una beta pubblica o di un lancio commerciale, se cambieranno dati trattati, funzionalità o fornitori rilevanti.",
+          },
+          {
+            title: "Contatto",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+      terms: {
+        seo: {
+          title: "Termini | Worktia",
+          description: "Termini d'uso della landing beta/pre-lancio di Worktia.",
+        },
+        title: "Termini",
+        updated: "Ultimo aggiornamento: 2026-06-03",
+        intro:
+          "Questi termini descrivono l'uso della landing beta/pre-lancio di Worktia. Non costituiscono consulenza legale.",
+        sections: [
+          {
+            title: "Natura del sito",
+            body: "Il sito presenta Worktia come prodotto in fase beta/pre-lancio.",
+          },
+          {
+            title: "Nessuna disponibilità pubblica garantita",
+            body: "L'accesso alla beta può essere limitato, rinviato o non concesso.",
+          },
+          {
+            title: "Limiti della beta",
+            body: "Eventuali accessi beta possono includere limiti funzionali, bug, interruzioni o cambiamenti senza che questo implichi disponibilità stabile del prodotto.",
+          },
+          {
+            title: "Informazioni non contrattuali",
+            body: "Le funzionalità descritte rappresentano direzione prodotto e posizionamento; alcune possono essere in sviluppo o soggette a modifica.",
+          },
+          {
+            title: "Nessuna consulenza",
+            body: "I contenuti del sito non sono consulenza legale, fiscale, tecnica o professionale.",
+          },
+          {
+            title: "Documentazione operativa",
+            body: "PDF, firme, validazioni e documentazione operativa eventualmente descritti non sostituiscono requisiti legali, collaudi formali o verifiche professionali quando richiesti.",
+          },
+          {
+            title: "Proprietà intellettuale",
+            body: "Nome, testi, design e contenuti appartengono a Worktia o ai rispettivi titolari.",
+          },
+          {
+            title: "Uso corretto",
+            body: "Non usare il sito per attività illecite, scraping abusivo, interferenze tecniche, accessi non autorizzati o comportamenti che possano danneggiare il servizio.",
+          },
+          {
+            title: "Link e servizi terzi",
+            body: "Il sito può rimandare a servizi terzi, per esempio email, hosting o strumenti tecnici. Tali servizi restano soggetti alle rispettive condizioni.",
+          },
+          {
+            title: "Modifiche",
+            body: "I testi possono essere aggiornati in futuro.",
+          },
+          {
+            title: "Contatto",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+    },
     footer: {
       tagline: "Il tuo lavoro. In ordine.",
       links: {
@@ -462,6 +624,144 @@ export const translations: Record<Locale, Translation> = {
           answer: "For companies and operational teams managing jobs, maintenance, inspections, checklists, photos and reports to deliver or archive.",
         },
       ],
+    },
+    legal: {
+      common: {
+        backHome: "Back to home",
+      },
+      privacy: {
+        seo: {
+          title: "Privacy | Worktia",
+          description: "Privacy notice for the Worktia beta/pre-launch landing page.",
+        },
+        title: "Privacy notice",
+        updated: "Last updated: 2026-06-03",
+        intro:
+          "This notice briefly describes how personal data may be processed on the Worktia beta/pre-launch landing page. It is not legal advice.",
+        sections: [
+          {
+            title: "Who we are",
+            body: "Worktia is a beta/pre-launch project dedicated to field work management.",
+          },
+          {
+            title: "Scope",
+            body: "This notice covers Worktia's public landing page and beta or pre-launch requests sent by email.",
+          },
+          {
+            title: "What it does not cover yet",
+            body: "This notice does not yet cover a complete app, public accounts, payments, cloud sync or customer/technician portals, because they are not active on this landing page.",
+          },
+          {
+            title: "Data we may process",
+            items: [
+              "technical navigation data necessary for the operation of the site and hosting;",
+              "data voluntarily sent by email, such as name, email, company, sector and message;",
+              "no payments, user accounts or active backend forms on this landing page.",
+            ],
+          },
+          {
+            title: "Purposes",
+            items: [
+              "responding to information or beta access requests;",
+              "managing pre-commercial communications;",
+              "improving our understanding of interest in Worktia;",
+              "ensuring the security and technical operation of the site.",
+            ],
+          },
+          {
+            title: "Cookies and tracking",
+            body: "This landing page does not use tracking tools, analytics or profiling cookies. If analytics or marketing tools are introduced in the future, this notice will be updated and, where required, consent will be requested.",
+          },
+          {
+            title: "Legal basis",
+            items: [
+              "the user's request or pre-contractual steps to respond to the beta request;",
+              "legitimate interest for the security and technical operation of the site;",
+              "legal obligations, where applicable.",
+            ],
+          },
+          {
+            title: "Retention",
+            body: "Data sent by email will be retained for the time necessary to handle the beta request and related communications, unless further obligations or needs apply.",
+          },
+          {
+            title: "Sharing",
+            body: "Data may be processed by technical providers necessary for the operation of the site, deploy/repository and email. We do not sell personal data.",
+          },
+          {
+            title: "Transfers outside the EEA",
+            body: "Some technical providers may process data outside the European Economic Area, where applicable. In those cases, processing depends on the safeguards and terms provided by the relevant providers.",
+          },
+          {
+            title: "Rights",
+            body: "Users may request access, rectification, deletion, restriction, objection and, where applicable, portability.",
+          },
+          {
+            title: "Updates",
+            body: "This notice will be updated before a public beta or commercial launch if the processed data, features or relevant providers change.",
+          },
+          {
+            title: "Contact",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+      terms: {
+        seo: {
+          title: "Terms | Worktia",
+          description: "Terms of use for the Worktia beta/pre-launch landing page.",
+        },
+        title: "Terms",
+        updated: "Last updated: 2026-06-03",
+        intro:
+          "These terms describe use of the Worktia beta/pre-launch landing page. They are not legal advice.",
+        sections: [
+          {
+            title: "Nature of the site",
+            body: "The site presents Worktia as a product in beta/pre-launch phase.",
+          },
+          {
+            title: "No guaranteed public availability",
+            body: "Access to the beta may be limited, postponed or not granted.",
+          },
+          {
+            title: "Beta limits",
+            body: "Any beta access may include functional limits, bugs, interruptions or changes, and does not imply stable product availability.",
+          },
+          {
+            title: "Non-contractual information",
+            body: "The features described represent product direction and positioning; some may be in development or subject to change.",
+          },
+          {
+            title: "No advice",
+            body: "The site's content is not legal, tax, technical or professional advice.",
+          },
+          {
+            title: "Operational documentation",
+            body: "PDFs, signatures, validations and operational documentation that may be described do not replace legal requirements, formal acceptance procedures or professional checks where required.",
+          },
+          {
+            title: "Intellectual property",
+            body: "The name, texts, design and content belong to Worktia or their respective owners.",
+          },
+          {
+            title: "Proper use",
+            body: "Do not use the site for unlawful activities, abusive scraping, technical interference, unauthorized access or behavior that may damage the service.",
+          },
+          {
+            title: "Third-party links and services",
+            body: "The site may refer to third-party services, such as email, hosting or technical tools. Those services remain subject to their own terms.",
+          },
+          {
+            title: "Changes",
+            body: "These texts may be updated in the future.",
+          },
+          {
+            title: "Contact",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
     },
     footer: {
       tagline: "Field work, organized.",
@@ -650,6 +950,144 @@ export const translations: Record<Locale, Translation> = {
         },
       ],
     },
+    legal: {
+      common: {
+        backHome: "Volver al inicio",
+      },
+      privacy: {
+        seo: {
+          title: "Privacidad | Worktia",
+          description: "Información de privacidad de la landing beta/prelanzamiento de Worktia.",
+        },
+        title: "Información de privacidad",
+        updated: "Última actualización: 2026-06-03",
+        intro:
+          "Esta información describe de forma sintética cómo pueden tratarse los datos personales en la landing beta/prelanzamiento de Worktia. No constituye asesoramiento legal.",
+        sections: [
+          {
+            title: "Quiénes somos",
+            body: "Worktia es un proyecto en fase beta/prelanzamiento dedicado a la gestión del trabajo de campo.",
+          },
+          {
+            title: "Ámbito",
+            body: "Esta información cubre la landing pública de Worktia y las solicitudes beta o de prelanzamiento enviadas por email.",
+          },
+          {
+            title: "Qué no cubre todavía",
+            body: "Esta información todavía no cubre una app completa, cuentas públicas, pagos, sincronización cloud o portales cliente/técnico, porque no están activos en esta landing.",
+          },
+          {
+            title: "Qué datos podemos tratar",
+            items: [
+              "datos técnicos de navegación necesarios para el funcionamiento del sitio y del hosting;",
+              "datos enviados voluntariamente por email, por ejemplo nombre, email, empresa, sector y mensaje;",
+              "ningún pago, cuenta de usuario o formulario backend activo en esta landing.",
+            ],
+          },
+          {
+            title: "Finalidades",
+            items: [
+              "responder a solicitudes de información o acceso beta;",
+              "gestionar comunicaciones precomerciales;",
+              "mejorar la comprensión del interés hacia Worktia;",
+              "garantizar la seguridad y el funcionamiento técnico del sitio.",
+            ],
+          },
+          {
+            title: "Cookies y tracking",
+            body: "Esta landing no utiliza herramientas de tracking, analytics ni cookies de perfilado. Si en el futuro se introducen herramientas de análisis o marketing, esta información se actualizará y, cuando sea necesario, se solicitará el consentimiento.",
+          },
+          {
+            title: "Base jurídica",
+            items: [
+              "solicitud del usuario o medidas precontractuales para responder a la solicitud beta;",
+              "interés legítimo para la seguridad y el funcionamiento técnico del sitio;",
+              "obligaciones legales, cuando correspondan.",
+            ],
+          },
+          {
+            title: "Conservación",
+            body: "Los datos enviados por email se conservarán durante el tiempo necesario para gestionar la solicitud beta y las comunicaciones relacionadas, salvo obligaciones o necesidades adicionales.",
+          },
+          {
+            title: "Compartición",
+            body: "Los datos pueden ser tratados por proveedores técnicos necesarios para el funcionamiento del sitio, del deploy/repositorio y del correo electrónico. No vendemos datos personales.",
+          },
+          {
+            title: "Transferencias fuera del EEE",
+            body: "Algunos proveedores técnicos podrían tratar datos fuera del Espacio Económico Europeo, si corresponde. En esos casos, el tratamiento depende de las garantías y condiciones previstas por los respectivos proveedores.",
+          },
+          {
+            title: "Derechos",
+            body: "El usuario puede solicitar acceso, rectificación, supresión, limitación, oposición y, cuando corresponda, portabilidad.",
+          },
+          {
+            title: "Actualizaciones",
+            body: "Esta información se actualizará antes de una beta pública o de un lanzamiento comercial si cambian los datos tratados, las funcionalidades o los proveedores relevantes.",
+          },
+          {
+            title: "Contacto",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+      terms: {
+        seo: {
+          title: "Términos | Worktia",
+          description: "Términos de uso de la landing beta/prelanzamiento de Worktia.",
+        },
+        title: "Términos",
+        updated: "Última actualización: 2026-06-03",
+        intro:
+          "Estos términos describen el uso de la landing beta/prelanzamiento de Worktia. No constituyen asesoramiento legal.",
+        sections: [
+          {
+            title: "Naturaleza del sitio",
+            body: "El sitio presenta Worktia como producto en fase beta/prelanzamiento.",
+          },
+          {
+            title: "Ninguna disponibilidad pública garantizada",
+            body: "El acceso a la beta puede ser limitado, pospuesto o no concedido.",
+          },
+          {
+            title: "Límites de la beta",
+            body: "Cualquier acceso beta puede incluir límites funcionales, bugs, interrupciones o cambios, sin que esto implique disponibilidad estable del producto.",
+          },
+          {
+            title: "Información no contractual",
+            body: "Las funcionalidades descritas representan dirección de producto y posicionamiento; algunas pueden estar en desarrollo o sujetas a modificación.",
+          },
+          {
+            title: "Ningún asesoramiento",
+            body: "Los contenidos del sitio no son asesoramiento legal, fiscal, técnico o profesional.",
+          },
+          {
+            title: "Documentación operativa",
+            body: "Los PDF, firmas, validaciones y documentación operativa que puedan describirse no sustituyen requisitos legales, recepciones formales o verificaciones profesionales cuando sean necesarias.",
+          },
+          {
+            title: "Propiedad intelectual",
+            body: "El nombre, los textos, el diseño y los contenidos pertenecen a Worktia o a sus respectivos titulares.",
+          },
+          {
+            title: "Uso correcto",
+            body: "No utilices el sitio para actividades ilícitas, scraping abusivo, interferencias técnicas, accesos no autorizados o comportamientos que puedan dañar el servicio.",
+          },
+          {
+            title: "Enlaces y servicios de terceros",
+            body: "El sitio puede remitir a servicios de terceros, por ejemplo email, hosting o herramientas técnicas. Dichos servicios quedan sujetos a sus propias condiciones.",
+          },
+          {
+            title: "Modificaciones",
+            body: "Los textos pueden actualizarse en el futuro.",
+          },
+          {
+            title: "Contacto",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+    },
     footer: {
       tagline: "Tu trabajo, en orden.",
       links: {
@@ -837,6 +1275,144 @@ export const translations: Record<Locale, Translation> = {
         },
       ],
     },
+    legal: {
+      common: {
+        backHome: "Retour à l'accueil",
+      },
+      privacy: {
+        seo: {
+          title: "Confidentialité | Worktia",
+          description: "Notice de confidentialité de la landing bêta/pré-lancement de Worktia.",
+        },
+        title: "Notice de confidentialité",
+        updated: "Dernière mise à jour : 2026-06-03",
+        intro:
+          "Cette notice décrit de manière synthétique comment les données personnelles peuvent être traitées sur la landing bêta/pré-lancement de Worktia. Elle ne constitue pas un conseil juridique.",
+        sections: [
+          {
+            title: "Qui sommes-nous",
+            body: "Worktia est un projet en phase bêta/pré-lancement dédié à la gestion des interventions sur le terrain.",
+          },
+          {
+            title: "Périmètre",
+            body: "Cette notice couvre la landing publique de Worktia et les demandes bêta ou pré-lancement envoyées par email.",
+          },
+          {
+            title: "Ce qu'elle ne couvre pas encore",
+            body: "Cette notice ne couvre pas encore une application complète, des comptes publics, des paiements, une synchronisation cloud ou des portails client/technicien, car ils ne sont pas actifs sur cette landing.",
+          },
+          {
+            title: "Données que nous pouvons traiter",
+            items: [
+              "données techniques de navigation nécessaires au fonctionnement du site et de l'hébergement ;",
+              "données envoyées volontairement par email, par exemple nom, email, entreprise, secteur et message ;",
+              "aucun paiement, compte utilisateur ou formulaire backend actif sur cette landing.",
+            ],
+          },
+          {
+            title: "Finalités",
+            items: [
+              "répondre aux demandes d'information ou d'accès bêta ;",
+              "gérer les communications précommerciales ;",
+              "améliorer la compréhension de l'intérêt pour Worktia ;",
+              "garantir la sécurité et le fonctionnement technique du site.",
+            ],
+          },
+          {
+            title: "Cookies et tracking",
+            body: "Cette landing n'utilise pas d'outils de tracking, d'analytics ni de cookies de profilage. Si des outils d'analyse ou de marketing sont introduits à l'avenir, cette notice sera mise à jour et, lorsque cela sera requis, le consentement sera demandé.",
+          },
+          {
+            title: "Base juridique",
+            items: [
+              "demande de l'utilisateur ou mesures précontractuelles pour répondre à la demande bêta ;",
+              "intérêt légitime pour la sécurité et le fonctionnement technique du site ;",
+              "obligations légales, le cas échéant.",
+            ],
+          },
+          {
+            title: "Conservation",
+            body: "Les données envoyées par email seront conservées pendant le temps nécessaire au traitement de la demande bêta et des communications liées, sauf obligations ou besoins supplémentaires.",
+          },
+          {
+            title: "Partage",
+            body: "Les données peuvent être traitées par des fournisseurs techniques nécessaires au fonctionnement du site, du déploiement/référentiel et de la messagerie électronique. Nous ne vendons pas de données personnelles.",
+          },
+          {
+            title: "Transferts hors EEE",
+            body: "Certains fournisseurs techniques peuvent traiter des données hors de l'Espace économique européen, le cas échéant. Dans ces cas, le traitement dépend des garanties et conditions prévues par les fournisseurs concernés.",
+          },
+          {
+            title: "Droits",
+            body: "L'utilisateur peut demander l'accès, la rectification, l'effacement, la limitation, l'opposition et, le cas échéant, la portabilité.",
+          },
+          {
+            title: "Mises à jour",
+            body: "Cette notice sera mise à jour avant une bêta publique ou un lancement commercial si les données traitées, les fonctionnalités ou les fournisseurs pertinents changent.",
+          },
+          {
+            title: "Contact",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+      terms: {
+        seo: {
+          title: "Conditions | Worktia",
+          description: "Conditions d'utilisation de la landing bêta/pré-lancement de Worktia.",
+        },
+        title: "Conditions",
+        updated: "Dernière mise à jour : 2026-06-03",
+        intro:
+          "Ces conditions décrivent l'utilisation de la landing bêta/pré-lancement de Worktia. Elles ne constituent pas un conseil juridique.",
+        sections: [
+          {
+            title: "Nature du site",
+            body: "Le site présente Worktia comme un produit en phase bêta/pré-lancement.",
+          },
+          {
+            title: "Aucune disponibilité publique garantie",
+            body: "L'accès à la bêta peut être limité, reporté ou non accordé.",
+          },
+          {
+            title: "Limites de la bêta",
+            body: "Tout accès bêta peut inclure des limites fonctionnelles, des bugs, des interruptions ou des changements, sans impliquer une disponibilité stable du produit.",
+          },
+          {
+            title: "Informations non contractuelles",
+            body: "Les fonctionnalités décrites représentent une direction produit et un positionnement ; certaines peuvent être en développement ou sujettes à modification.",
+          },
+          {
+            title: "Aucun conseil",
+            body: "Les contenus du site ne constituent pas un conseil juridique, fiscal, technique ou professionnel.",
+          },
+          {
+            title: "Documentation opérationnelle",
+            body: "Les PDF, signatures, validations et documentations opérationnelles éventuellement décrits ne remplacent pas les exigences légales, réceptions formelles ou vérifications professionnelles lorsqu'elles sont requises.",
+          },
+          {
+            title: "Propriété intellectuelle",
+            body: "Le nom, les textes, le design et les contenus appartiennent à Worktia ou à leurs titulaires respectifs.",
+          },
+          {
+            title: "Utilisation correcte",
+            body: "N'utilisez pas le site pour des activités illicites, du scraping abusif, des interférences techniques, des accès non autorisés ou des comportements susceptibles d'endommager le service.",
+          },
+          {
+            title: "Liens et services tiers",
+            body: "Le site peut renvoyer vers des services tiers, par exemple email, hébergement ou outils techniques. Ces services restent soumis à leurs propres conditions.",
+          },
+          {
+            title: "Modifications",
+            body: "Les textes peuvent être mis à jour à l'avenir.",
+          },
+          {
+            title: "Contact",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+    },
     footer: {
       tagline: "Vos interventions, enfin organisées.",
       links: {
@@ -1023,6 +1599,144 @@ export const translations: Record<Locale, Translation> = {
           answer: "Für Unternehmen und operative Teams, die Aufträge, Wartungen, Inspektionen, Checklisten, Fotos und Berichte zur Übergabe oder Archivierung verwalten.",
         },
       ],
+    },
+    legal: {
+      common: {
+        backHome: "Zurück zur Startseite",
+      },
+      privacy: {
+        seo: {
+          title: "Datenschutz | Worktia",
+          description: "Datenschutzhinweise für die Beta-/Pre-Launch-Landingpage von Worktia.",
+        },
+        title: "Datenschutzhinweise",
+        updated: "Letzte Aktualisierung: 2026-06-03",
+        intro:
+          "Diese Hinweise beschreiben kurz, wie personenbezogene Daten auf der Beta-/Pre-Launch-Landingpage von Worktia verarbeitet werden können. Sie stellen keine Rechtsberatung dar.",
+        sections: [
+          {
+            title: "Wer wir sind",
+            body: "Worktia ist ein Projekt in der Beta-/Pre-Launch-Phase für die Verwaltung von Außendienstarbeit.",
+          },
+          {
+            title: "Geltungsbereich",
+            body: "Diese Hinweise betreffen die öffentliche Landingpage von Worktia und Beta- oder Pre-Launch-Anfragen, die per E-Mail gesendet werden.",
+          },
+          {
+            title: "Was noch nicht abgedeckt ist",
+            body: "Diese Hinweise betreffen noch keine vollständige App, keine öffentlichen Konten, keine Zahlungen, keine Cloud-Synchronisierung und keine Kunden-/Technikerportale, da diese auf dieser Landingpage nicht aktiv sind.",
+          },
+          {
+            title: "Welche Daten wir verarbeiten können",
+            items: [
+              "technische Navigationsdaten, die für den Betrieb der Website und des Hostings erforderlich sind;",
+              "freiwillig per E-Mail übermittelte Daten, zum Beispiel Name, E-Mail, Unternehmen, Branche und Nachricht;",
+              "keine Zahlungen, Benutzerkonten oder aktiven Backend-Formulare auf dieser Landingpage.",
+            ],
+          },
+          {
+            title: "Zwecke",
+            items: [
+              "Beantwortung von Informations- oder Beta-Zugangsanfragen;",
+              "Verwaltung vorkommerzieller Kommunikation;",
+              "besseres Verständnis des Interesses an Worktia;",
+              "Gewährleistung der Sicherheit und des technischen Betriebs der Website.",
+            ],
+          },
+          {
+            title: "Cookies und Tracking",
+            body: "Diese Landingpage verwendet keine Tracking-Tools, Analytics oder Profiling-Cookies. Wenn in Zukunft Analyse- oder Marketing-Tools eingeführt werden, werden diese Hinweise aktualisiert und, soweit erforderlich, wird eine Einwilligung eingeholt.",
+          },
+          {
+            title: "Rechtsgrundlage",
+            items: [
+              "Anfrage des Nutzers oder vorvertragliche Maßnahmen zur Beantwortung der Beta-Anfrage;",
+              "berechtigtes Interesse an Sicherheit und technischem Betrieb der Website;",
+              "rechtliche Verpflichtungen, soweit anwendbar.",
+            ],
+          },
+          {
+            title: "Aufbewahrung",
+            body: "Per E-Mail übermittelte Daten werden so lange aufbewahrt, wie es für die Bearbeitung der Beta-Anfrage und der damit verbundenen Kommunikation erforderlich ist, sofern keine weiteren Pflichten oder Erfordernisse bestehen.",
+          },
+          {
+            title: "Weitergabe",
+            body: "Daten können von technischen Anbietern verarbeitet werden, die für den Betrieb der Website, des Deployments/Repositorys und der E-Mail-Kommunikation erforderlich sind. Wir verkaufen keine personenbezogenen Daten.",
+          },
+          {
+            title: "Übermittlungen außerhalb des EWR",
+            body: "Einige technische Anbieter können Daten gegebenenfalls außerhalb des Europäischen Wirtschaftsraums verarbeiten. In diesen Fällen hängt die Verarbeitung von den Garantien und Bedingungen der jeweiligen Anbieter ab.",
+          },
+          {
+            title: "Rechte",
+            body: "Nutzer können Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und, soweit anwendbar, Übertragbarkeit verlangen.",
+          },
+          {
+            title: "Aktualisierungen",
+            body: "Diese Hinweise werden vor einer öffentlichen Beta oder einem kommerziellen Launch aktualisiert, wenn sich verarbeitete Daten, Funktionen oder relevante Anbieter ändern.",
+          },
+          {
+            title: "Kontakt",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
+      terms: {
+        seo: {
+          title: "Bedingungen | Worktia",
+          description: "Nutzungsbedingungen für die Beta-/Pre-Launch-Landingpage von Worktia.",
+        },
+        title: "Bedingungen",
+        updated: "Letzte Aktualisierung: 2026-06-03",
+        intro:
+          "Diese Bedingungen beschreiben die Nutzung der Beta-/Pre-Launch-Landingpage von Worktia. Sie stellen keine Rechtsberatung dar.",
+        sections: [
+          {
+            title: "Art der Website",
+            body: "Die Website präsentiert Worktia als Produkt in der Beta-/Pre-Launch-Phase.",
+          },
+          {
+            title: "Keine garantierte öffentliche Verfügbarkeit",
+            body: "Der Zugang zur Beta kann beschränkt, verschoben oder nicht gewährt werden.",
+          },
+          {
+            title: "Grenzen der Beta",
+            body: "Ein etwaiger Beta-Zugang kann funktionale Einschränkungen, Fehler, Unterbrechungen oder Änderungen enthalten und bedeutet keine stabile Produktverfügbarkeit.",
+          },
+          {
+            title: "Nichtvertragliche Informationen",
+            body: "Die beschriebenen Funktionen stellen Produktrichtung und Positionierung dar; einige können sich in Entwicklung befinden oder Änderungen unterliegen.",
+          },
+          {
+            title: "Keine Beratung",
+            body: "Die Inhalte der Website sind keine rechtliche, steuerliche, technische oder professionelle Beratung.",
+          },
+          {
+            title: "Operative Dokumentation",
+            body: "Etwa beschriebene PDFs, Unterschriften, Validierungen und operative Dokumentation ersetzen keine gesetzlichen Anforderungen, formalen Abnahmen oder professionellen Prüfungen, wenn diese erforderlich sind.",
+          },
+          {
+            title: "Geistiges Eigentum",
+            body: "Name, Texte, Design und Inhalte gehören Worktia oder den jeweiligen Rechteinhabern.",
+          },
+          {
+            title: "Ordnungsgemäße Nutzung",
+            body: "Nutzen Sie die Website nicht für rechtswidrige Aktivitäten, missbräuchliches Scraping, technische Störungen, unbefugte Zugriffe oder Verhalten, das den Dienst schädigen kann.",
+          },
+          {
+            title: "Links und Dienste Dritter",
+            body: "Die Website kann auf Dienste Dritter verweisen, zum Beispiel E-Mail, Hosting oder technische Tools. Diese Dienste unterliegen ihren eigenen Bedingungen.",
+          },
+          {
+            title: "Änderungen",
+            body: "Die Texte können in Zukunft aktualisiert werden.",
+          },
+          {
+            title: "Kontakt",
+            body: "beta@worktia.com",
+          },
+        ],
+      },
     },
     footer: {
       tagline: "Ihre Außendienstarbeit, organisiert.",

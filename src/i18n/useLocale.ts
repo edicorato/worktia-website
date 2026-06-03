@@ -3,10 +3,18 @@ import { defaultLocale, isLocale, ogLocales, type Locale } from "./locales";
 import { translations, type Translation } from "./translations";
 
 const storageKey = "worktia-locale";
+const legalPages = ["privacy", "terms"] as const;
+
+type LegalPageKey = (typeof legalPages)[number];
 
 function getPathLocale(pathname: string): Locale | undefined {
   const segment = pathname.split("/").filter(Boolean)[0];
   return isLocale(segment) ? segment : undefined;
+}
+
+function getLegalPage(pathname: string): LegalPageKey | undefined {
+  const page = pathname.split("/").filter(Boolean)[1];
+  return legalPages.includes(page as LegalPageKey) ? (page as LegalPageKey) : undefined;
 }
 
 function getStoredLocale(): Locale | undefined {
@@ -96,11 +104,14 @@ function useLocaleState(): LocaleContextValue {
   }, [locale]);
 
   useEffect(() => {
+    const legalPage = getLegalPage(window.location.pathname);
+    const seo = legalPage ? t.legal[legalPage].seo : t.seo;
+
     document.documentElement.lang = locale;
-    document.title = t.seo.title;
-    updateMeta("description", t.seo.description);
-    updateProperty("og:title", t.seo.title);
-    updateProperty("og:description", t.seo.description);
+    document.title = seo.title;
+    updateMeta("description", seo.description);
+    updateProperty("og:title", seo.title);
+    updateProperty("og:description", seo.description);
     updateProperty("og:locale", ogLocales[locale]);
   }, [locale, t]);
 
