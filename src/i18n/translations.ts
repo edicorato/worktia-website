@@ -316,7 +316,7 @@ export const translations: Record<Locale, Translation> = {
         sections: [
           {
             title: "Chi siamo",
-            body: "Worktia è un progetto in fase beta/pre-lancio dedicato alla gestione dei lavori sul campo.",
+            body: "Worktia è un progetto in fase pre-lancio gestito dal suo fondatore. Contatto privacy: beta@worktia.com.",
           },
           {
             title: "Ambito",
@@ -332,6 +332,7 @@ export const translations: Record<Locale, Translation> = {
               "dati tecnici di navigazione necessari al funzionamento del sito e dell'hosting;",
               "dati inviati volontariamente via email, per esempio nome, email, azienda, settore e messaggio;",
               "nessun pagamento, account utente o form backend attivo su questa landing.",
+              "L'invio di dati tramite email è volontario; senza tali dati potremmo non essere in grado di rispondere alla richiesta beta.",
             ],
           },
           {
@@ -369,11 +370,11 @@ export const translations: Record<Locale, Translation> = {
           },
           {
             title: "Diritti",
-            body: "L'utente può chiedere accesso, rettifica, cancellazione, limitazione, opposizione e, dove applicabile, portabilità.",
+            body: "L'utente può chiedere accesso, rettifica, cancellazione, limitazione, opposizione e, dove applicabile, portabilità. Hai inoltre il diritto di proporre reclamo all'autorità di controllo competente, in particolare nello Stato membro in cui risiedi, lavori o ritieni si sia verificata una violazione. In Italia l'autorità competente è il Garante per la protezione dei dati personali.",
           },
           {
             title: "Aggiornamenti",
-            body: "Questa informativa sarà aggiornata prima di una beta pubblica o di un lancio commerciale, se cambieranno dati trattati, funzionalità o fornitori rilevanti.",
+            body: "Questa informativa sarà aggiornata prima di una beta pubblica o di un lancio commerciale, se cambieranno dati trattati, funzionalità o fornitori rilevanti. Questa informativa potrà essere aggiornata con i dati identificativi completi del titolare prima della beta pubblica o del lancio commerciale.",
           },
           {
             title: "Contatto",
@@ -398,6 +399,10 @@ export const translations: Record<Locale, Translation> = {
           {
             title: "Nessuna disponibilità pubblica garantita",
             body: "L'accesso alla beta può essere limitato, rinviato o non concesso.",
+          },
+          {
+            title: "Nessun rapporto contrattuale tramite richiesta beta",
+            body: "L'invio di una richiesta beta non crea un rapporto contrattuale, non garantisce accesso al prodotto e non comporta obblighi di fornitura da parte di Worktia.",
           },
           {
             title: "Limiti della beta",
@@ -641,7 +646,7 @@ export const translations: Record<Locale, Translation> = {
         sections: [
           {
             title: "Who we are",
-            body: "Worktia is a beta/pre-launch project dedicated to field work management.",
+            body: "Worktia is a pre-launch project managed by its founder. Privacy contact: beta@worktia.com.",
           },
           {
             title: "Scope",
@@ -657,6 +662,7 @@ export const translations: Record<Locale, Translation> = {
               "technical navigation data necessary for the operation of the site and hosting;",
               "data voluntarily sent by email, such as name, email, company, sector and message;",
               "no payments, user accounts or active backend forms on this landing page.",
+              "Sending data by email is voluntary; without that information, we may not be able to respond to the beta request.",
             ],
           },
           {
@@ -694,11 +700,11 @@ export const translations: Record<Locale, Translation> = {
           },
           {
             title: "Rights",
-            body: "Users may request access, rectification, deletion, restriction, objection and, where applicable, portability.",
+            body: "Users may request access, rectification, deletion, restriction, objection and, where applicable, portability. You also have the right to lodge a complaint with the competent supervisory authority, in particular in the Member State where you live, work or where you believe an infringement has occurred.",
           },
           {
             title: "Updates",
-            body: "This notice will be updated before a public beta or commercial launch if the processed data, features or relevant providers change.",
+            body: "This notice will be updated before a public beta or commercial launch if the processed data, features or relevant providers change. This notice may be updated with the full identification details of the controller before the public beta or commercial launch.",
           },
           {
             title: "Contact",
@@ -723,6 +729,10 @@ export const translations: Record<Locale, Translation> = {
           {
             title: "No guaranteed public availability",
             body: "Access to the beta may be limited, postponed or not granted.",
+          },
+          {
+            title: "No contractual relationship through a beta request",
+            body: "Submitting a beta request does not create a contractual relationship, does not guarantee access to the product and does not create any obligation for Worktia to provide the service.",
           },
           {
             title: "Beta limits",
@@ -966,7 +976,7 @@ export const translations: Record<Locale, Translation> = {
         sections: [
           {
             title: "Quiénes somos",
-            body: "Worktia es un proyecto en fase beta/prelanzamiento dedicado a la gestión del trabajo de campo.",
+            body: "Worktia es un proyecto en fase de prelanzamiento gestionado por su fundador. Contacto de privacidad: beta@worktia.com.",
           },
           {
             title: "Ámbito",
@@ -982,6 +992,7 @@ export const translations: Record<Locale, Translation> = {
               "datos técnicos de navegación necesarios para el funcionamiento del sitio y del hosting;",
               "datos enviados voluntariamente por email, por ejemplo nombre, email, empresa, sector y mensaje;",
               "ningún pago, cuenta de usuario o formulario backend activo en esta landing.",
+              "El envío de datos por email es voluntario; sin esa información, es posible que no podamos responder a la solicitud de beta.",
             ],
           },
           {
@@ -1019,11 +1030,11 @@ export const translations: Record<Locale, Translation> = {
           },
           {
             title: "Derechos",
-            body: "El usuario puede solicitar acceso, rectificación, supresión, limitación, oposición y, cuando corresponda, portabilidad.",
+            body: "El usuario puede solicitar acceso, rectificación, supresión, limitación, oposición y, cuando corresponda, portabilidad. También tienes derecho a presentar una reclamación ante la autoridad de control competente, en particular en el Estado miembro en el que resides, trabajas o consideras que se ha producido una infracción.",
           },
           {
             title: "Actualizaciones",
-            body: "Esta información se actualizará antes de una beta pública o de un lanzamiento comercial si cambian los datos tratados, las funcionalidades o los proveedores relevantes.",
+            body: "Esta información se actualizará antes de una beta pública o de un lanzamiento comercial si cambian los datos tratados, las funcionalidades o los proveedores relevantes. Esta información podrá actualizarse con los datos identificativos completos del responsable antes de la beta pública o del lanzamiento comercial.",
           },
           {
             title: "Contacto",
@@ -1048,6 +1059,10 @@ export const translations: Record<Locale, Translation> = {
           {
             title: "Ninguna disponibilidad pública garantizada",
             body: "El acceso a la beta puede ser limitado, pospuesto o no concedido.",
+          },
+          {
+            title: "Ninguna relación contractual por solicitud de beta",
+            body: "El envío de una solicitud de beta no crea una relación contractual, no garantiza el acceso al producto y no genera ninguna obligación de prestación por parte de Worktia.",
           },
           {
             title: "Límites de la beta",
@@ -1291,7 +1306,7 @@ export const translations: Record<Locale, Translation> = {
         sections: [
           {
             title: "Qui sommes-nous",
-            body: "Worktia est un projet en phase bêta/pré-lancement dédié à la gestion des interventions sur le terrain.",
+            body: "Worktia est un projet en phase de pré-lancement géré par son fondateur. Contact confidentialité : beta@worktia.com.",
           },
           {
             title: "Périmètre",
@@ -1307,6 +1322,7 @@ export const translations: Record<Locale, Translation> = {
               "données techniques de navigation nécessaires au fonctionnement du site et de l'hébergement ;",
               "données envoyées volontairement par email, par exemple nom, email, entreprise, secteur et message ;",
               "aucun paiement, compte utilisateur ou formulaire backend actif sur cette landing.",
+              "L'envoi de données par email est volontaire ; sans ces informations, nous pourrions ne pas être en mesure de répondre à la demande bêta.",
             ],
           },
           {
@@ -1344,11 +1360,11 @@ export const translations: Record<Locale, Translation> = {
           },
           {
             title: "Droits",
-            body: "L'utilisateur peut demander l'accès, la rectification, l'effacement, la limitation, l'opposition et, le cas échéant, la portabilité.",
+            body: "L'utilisateur peut demander l'accès, la rectification, l'effacement, la limitation, l'opposition et, le cas échéant, la portabilité. Vous avez également le droit d'introduire une réclamation auprès de l'autorité de contrôle compétente, notamment dans l'État membre où vous résidez, travaillez ou estimez qu'une violation a eu lieu.",
           },
           {
             title: "Mises à jour",
-            body: "Cette notice sera mise à jour avant une bêta publique ou un lancement commercial si les données traitées, les fonctionnalités ou les fournisseurs pertinents changent.",
+            body: "Cette notice sera mise à jour avant une bêta publique ou un lancement commercial si les données traitées, les fonctionnalités ou les fournisseurs pertinents changent. Cette notice pourra être mise à jour avec les informations d'identification complètes du responsable avant la bêta publique ou le lancement commercial.",
           },
           {
             title: "Contact",
@@ -1373,6 +1389,10 @@ export const translations: Record<Locale, Translation> = {
           {
             title: "Aucune disponibilité publique garantie",
             body: "L'accès à la bêta peut être limité, reporté ou non accordé.",
+          },
+          {
+            title: "Aucune relation contractuelle via une demande bêta",
+            body: "L'envoi d'une demande bêta ne crée pas de relation contractuelle, ne garantit pas l'accès au produit et n'entraîne aucune obligation de fourniture de la part de Worktia.",
           },
           {
             title: "Limites de la bêta",
@@ -1616,7 +1636,7 @@ export const translations: Record<Locale, Translation> = {
         sections: [
           {
             title: "Wer wir sind",
-            body: "Worktia ist ein Projekt in der Beta-/Pre-Launch-Phase für die Verwaltung von Außendienstarbeit.",
+            body: "Worktia ist ein Projekt in der Vorbereitungsphase, das von seinem Gründer verwaltet wird. Datenschutzkontakt: beta@worktia.com.",
           },
           {
             title: "Geltungsbereich",
@@ -1632,6 +1652,7 @@ export const translations: Record<Locale, Translation> = {
               "technische Navigationsdaten, die für den Betrieb der Website und des Hostings erforderlich sind;",
               "freiwillig per E-Mail übermittelte Daten, zum Beispiel Name, E-Mail, Unternehmen, Branche und Nachricht;",
               "keine Zahlungen, Benutzerkonten oder aktiven Backend-Formulare auf dieser Landingpage.",
+              "Die Übermittlung von Daten per E-Mail ist freiwillig; ohne diese Informationen können wir die Beta-Anfrage möglicherweise nicht beantworten.",
             ],
           },
           {
@@ -1669,11 +1690,11 @@ export const translations: Record<Locale, Translation> = {
           },
           {
             title: "Rechte",
-            body: "Nutzer können Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und, soweit anwendbar, Übertragbarkeit verlangen.",
+            body: "Nutzer können Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und, soweit anwendbar, Übertragbarkeit verlangen. Sie haben außerdem das Recht, eine Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen, insbesondere in dem Mitgliedstaat, in dem Sie wohnen, arbeiten oder in dem Sie einen Verstoß vermuten.",
           },
           {
             title: "Aktualisierungen",
-            body: "Diese Hinweise werden vor einer öffentlichen Beta oder einem kommerziellen Launch aktualisiert, wenn sich verarbeitete Daten, Funktionen oder relevante Anbieter ändern.",
+            body: "Diese Hinweise werden vor einer öffentlichen Beta oder einem kommerziellen Launch aktualisiert, wenn sich verarbeitete Daten, Funktionen oder relevante Anbieter ändern. Dieser Hinweis kann vor der öffentlichen Beta oder dem kommerziellen Start um die vollständigen Identifikationsdaten des Verantwortlichen ergänzt werden.",
           },
           {
             title: "Kontakt",
@@ -1698,6 +1719,10 @@ export const translations: Record<Locale, Translation> = {
           {
             title: "Keine garantierte öffentliche Verfügbarkeit",
             body: "Der Zugang zur Beta kann beschränkt, verschoben oder nicht gewährt werden.",
+          },
+          {
+            title: "Kein Vertragsverhältnis durch eine Beta-Anfrage",
+            body: "Das Absenden einer Beta-Anfrage begründet kein Vertragsverhältnis, garantiert keinen Zugang zum Produkt und verpflichtet Worktia nicht zur Bereitstellung des Dienstes.",
           },
           {
             title: "Grenzen der Beta",
