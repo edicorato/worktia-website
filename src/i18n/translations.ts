@@ -142,14 +142,14 @@ export const translations: Record<Locale, Translation> = {
       kicker: "Il problema",
       title: "Quando il lavoro è fatto, spesso resta da rimettere tutto in ordine.",
       description:
-        "Foto in chat, note sparse, conferme verbali e rapportini ricopiati a fine giornata fanno perdere tempo e rendono più difficile dimostrare cosa è stato fatto.",
+        "Foto nei messaggi, note sparse, conferme verbali e rapportini ricopiati a fine giornata fanno perdere tempo e rendono più difficile dimostrare cosa è stato fatto.",
       cards: [
         {
-          title: "WhatsApp pieni di messaggi",
-          description: "Le informazioni restano dentro chat difficili da consultare.",
+          title: "Conversazioni piene di messaggi",
+          description: "Le informazioni restano dentro scambi difficili da consultare.",
         },
         {
-          title: "Foto sparse tra chat e galleria",
+          title: "Foto sparse tra messaggi e galleria",
           description: "Le immagini non sono sempre collegate al lavoro giusto.",
         },
         {
@@ -329,14 +329,14 @@ export const translations: Record<Locale, Translation> = {
       kicker: "The problem",
       title: "The job may be done, but the paperwork is often still a mess.",
       description:
-        "Photos in chats, scattered notes, verbal confirmations and end-of-day paperwork waste time and make it harder to prove what was actually done.",
+        "Photos in message threads, scattered notes, verbal confirmations and end-of-day paperwork waste time and make it harder to prove what was actually done.",
       cards: [
         {
-          title: "Chats full of messages",
+          title: "Message threads full of updates",
           description: "Information stays inside conversations that are hard to search later.",
         },
         {
-          title: "Photos scattered across chats and galleries",
+          title: "Photos scattered across messages and galleries",
           description: "Images are not always connected to the right job.",
         },
         {
@@ -516,14 +516,14 @@ export const translations: Record<Locale, Translation> = {
       kicker: "El problema",
       title: "La intervención puede estar terminada, pero la documentación suele quedar desordenada.",
       description:
-        "Fotos en chats, notas dispersas, confirmaciones verbales e informes preparados al final del día hacen perder tiempo y dificultan demostrar qué se hizo realmente.",
+        "Fotos en conversaciones, notas dispersas, confirmaciones verbales e informes preparados al final del día hacen perder tiempo y dificultan demostrar qué se hizo realmente.",
       cards: [
         {
-          title: "Chats llenos de mensajes",
+          title: "Conversaciones llenas de mensajes",
           description: "La información queda dentro de conversaciones difíciles de consultar.",
         },
         {
-          title: "Fotos dispersas entre chats y galería",
+          title: "Fotos dispersas entre mensajes y galería",
           description: "Las imágenes no siempre están conectadas con el trabajo correcto.",
         },
         {
@@ -706,11 +706,11 @@ export const translations: Record<Locale, Translation> = {
         "Photos dans les conversations, notes dispersées, confirmations verbales et rapports rédigés en fin de journée font perdre du temps et compliquent la preuve du travail réalisé.",
       cards: [
         {
-          title: "Chats pleins de messages",
-          description: "Les informations restent dans des conversations difficiles à consulter.",
+          title: "Conversations pleines de messages",
+          description: "Les informations restent dans des échanges difficiles à consulter.",
         },
         {
-          title: "Photos dispersées entre chat et galerie",
+          title: "Photos dispersées entre messages et galerie",
           description: "Les images ne sont pas toujours reliées à la bonne intervention.",
         },
         {
@@ -890,14 +890,14 @@ export const translations: Record<Locale, Translation> = {
       kicker: "Das Problem",
       title: "Der Einsatz ist erledigt, aber die Dokumentation bleibt oft ungeordnet.",
       description:
-        "Fotos in Chats, verstreute Notizen, mündliche Bestätigungen und Berichte am Tagesende kosten Zeit und erschweren den Nachweis der geleisteten Arbeit.",
+        "Fotos in Nachrichtenverläufen, verstreute Notizen, mündliche Bestätigungen und Berichte am Tagesende kosten Zeit und erschweren den Nachweis der geleisteten Arbeit.",
       cards: [
         {
-          title: "Chats voller Nachrichten",
-          description: "Informationen bleiben in schwer durchsuchbaren Unterhaltungen.",
+          title: "Nachrichtenverläufe voller Details",
+          description: "Informationen bleiben in Unterhaltungen, die später schwer zu durchsuchen sind.",
         },
         {
-          title: "Fotos verteilt auf Chat und Galerie",
+          title: "Fotos verteilt auf Nachrichten und Galerie",
           description: "Bilder sind nicht immer mit dem richtigen Auftrag verbunden.",
         },
         {
