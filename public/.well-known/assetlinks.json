@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.worktia.app",
+      "sha256_cert_fingerprints": [
+        "65:FC:F8:9C:F9:EE:E5:78:67:C4:BB:A9:8E:2F:62:6D:DD:4C:4A:8F:C8:FE:59:C7:3A:B7:10:54:B8:A7:DD:6F"
+      ]
+    }
+  }
+]
